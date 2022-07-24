@@ -60,7 +60,7 @@ app.get("/media/images", (req, res) => {
   });
 });
 
-app.post("/upload", async (req, res) => {
+app.post("/upload/img", async (req, res) => {
   if (!req.files) {
     return res.send({
       success: false,
